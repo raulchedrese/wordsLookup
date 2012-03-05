@@ -1,0 +1,205 @@
+/*
+Title:    Master styles for screen media
+Author:   Raul Chedrese
+*/
+
+/* Global Variables */ 
+$bg-pattern: "../images/leather-bg.png";
+$box-bg-color: #faf3df;
+$form-bar-bg: "../images/form-bg.png";
+$font-color: #725030;
+
+body {
+  font-family: monospace, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #444;
+  font-size: 62.5%;
+  background: #fff;
+  background-image: url($bg-pattern);
+}
+
+/* links */
+
+a:link, a:visited {
+  color: #369;
+  outline: none;
+}
+
+a:hover {
+  color: #39c;
+}
+
+img {
+  margin-bottom: 20px;
+}
+
+/* page structure
+-------------------------------------- */
+
+#labels {
+  margin-left: -110px;
+  margin-bottom: -20px;
+
+  #firstLetterImg {
+    margin-left: 90px;
+  }
+  #containsImg {
+    margin-left: 50px;
+  }
+  #lastLetterImg {
+    margin-left: 10px;
+  }
+}
+
+#wrap {
+  width: 667px;
+  margin: 0 auto;
+  padding: 20px 0px 20px 0px;
+  
+  #title {
+    margin-left: 180px;
+  }
+
+  #word-form {
+    width: 667px;
+    height: 111px;
+    background-image: url($form-bar-bg);
+    
+    form {
+      width: 667px;
+      padding: 15px;
+      
+      #numLetters {
+        margin-right: 144px;
+      }
+
+      #submit {
+        margin-left: 143px;
+      }
+
+      input {
+        width: 60px;
+        height: 70px;
+        float: left;
+        margin-left: 10px;
+        font-size: 3.0em;
+        text-align: center;
+        
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+        
+        
+        -moz-box-shadow: inset 0 4px 6px rgba(0,0,0,.4);
+        -webkit-box-shadow: inset 0 4px 6px rgba(0,0,0,.4);
+         box-shadow: inset 0 4px 6px rgba(0,0,0,.24);
+
+
+      }
+    }
+    
+  }
+  
+}
+
+#col1 {
+  width: 289px;
+  float: left;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-right: 2px solid;
+  padding-left: 10px;
+}
+
+#col2 {
+  width: 289px;
+  float: right;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-left: 10px;
+}
+
+
+#col1 ul {
+  display: none;
+}
+
+#col2 ul {
+  display: none;
+}
+
+#word-results {
+  position: absolute;
+  width: 600px;
+  margin-left: 33px;
+  margin-top: -13px;
+  margin-bottom: 200px;
+  z-index: -8;
+  background-color: $box-bg-color;
+  border: 2px solid #fff;
+  font-size: 2.2em;
+  
+  -webkit-box-shadow: 0px 5px 10px 2px rgba(100, 100, 100, .8);
+  -moz-box-shadow: 0px 5px 10px 2px rgba(100, 100, 100, .8);
+  box-shadow: 0px 5px 10px 2px rgba(100, 100, 100, .8);
+  
+  -webkit-border-bottom-right-radius: 5px;
+  -webkit-border-bottom-left-radius: 5px;
+  -moz-border-radius-bottomright: 5px;
+  -moz-border-radius-bottomleft: 5px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  
+}
+
+#footer {
+  
+}
+
+/* header
+-------------------------------------- */
+
+#word-finder {
+  font: Georgia;
+  font-size: 3.2em;
+}
+
+/* main styles
+-------------------------------------- */
+
+
+
+
+/* secondary styles
+-------------------------------------- */
+
+
+
+
+/* footer
+-------------------------------------- */
+
+#footer {
+  
+}
+
+
+/* misc
+-------------------------------------- */
+
+hr, .hide {
+  display: none;
+}
+
+a img {
+  border: none;
+}
+
+/* self-clear floats */
+
+.group:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
